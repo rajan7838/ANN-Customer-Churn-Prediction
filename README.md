@@ -1,7 +1,7 @@
-ANN Customer Churn Prediction
+ ANN Customer Churn Prediction
 A simple end-to-end machine learning project that predicts whether a bank customer will churn (leave the bank) using an Artificial Neural Network (ANN).
 
-Live Demo
+🚀 Live Demo
 The app is deployed on AWS EC2. You can access it here:
 
 FastAPI (API) – http://16.170.212.133:8000
@@ -10,14 +10,14 @@ API Documentation (Swagger) – http://16.170.212.133:8000/docs
 
 Streamlit Dashboard – http://16.170.212.133:8501
 
-What It Does
+📌 What It Does
 Takes customer details (credit score, geography, age, balance, etc.)
 
 Uses a trained ANN model to predict churn probability
 
 Provides both a REST API (FastAPI) and an interactive UI (Streamlit)
 
-Tech Stack
+🛠️ Tech Stack
 Python 3.11
 
 TensorFlow / Keras – model training
@@ -30,7 +30,7 @@ Docker – containerization
 
 AWS EC2 – cloud deployment
 
-Project Structure
+📁 Project Structure
 text
 .
 ├── src/                      # helper modules
@@ -44,7 +44,7 @@ text
 ├── app.py                    # FastAPI app
 ├── streamlit_app.py          # Streamlit dashboard
 └── README.md
-Run Locally
+🧪 Run Locally
 1. Clone the repository
 bash
 git clone https://github.com/rajan7838/ANN-Customer-Churn-Prediction.git
@@ -72,21 +72,17 @@ Open http://localhost:8501
 
 Note: Make sure FastAPI is running before using the Streamlit app.
 
- Run with Docker
-Build the image:
-
+🐳 Run with Docker
+Build the image
 bash
 docker build -t ann-churn .
-Create a network for communication:
-
+Create a network for communication
 bash
 docker network create churn-network
-Run FastAPI container:
-
+Run FastAPI container
 bash
 docker run -d -p 8000:8000 --network churn-network --name fastapi-app ann-churn
-Run Streamlit container:
-
+Run Streamlit container
 bash
 docker run -d -p 8501:8501 --network churn-network --name streamlit-app ann-churn streamlit run streamlit_app.py --server.port 8501 --server.address 0.0.0.0
 Now access:
@@ -115,20 +111,15 @@ Open ports 8000 and 8501 in the security group.
 
 Your app is now live on your EC2 public IP!
 
- Dataset
+📊 Dataset
 The model is trained on the Bank Customer Churn dataset from Kaggle.
 It contains 10,000 records with features like credit score, geography, age, balance, etc. The target is Exited (1 = churn, 0 = not churn).
 
- Contributing
+🤝 Contributing
 Feel free to fork, raise issues, or submit pull requests. All contributions are welcome!
 
- License
+📄 License
 This project is open source under the MIT License.
 
- Author
+👤 Author
 Rajan – GitHub
-Dataset
-The model uses the Bank Customer Churn dataset from Kaggle.
-
-Author
-Rajan
