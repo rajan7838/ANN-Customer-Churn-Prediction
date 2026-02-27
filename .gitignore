@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.csv
+artifacts/
+models/
+logs/
+mlruns/
+.DS_Store
+.vscode/
+.idea/
+*.h5
+*.pkl
+venv/
