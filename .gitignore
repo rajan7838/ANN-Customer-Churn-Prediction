@@ -14,3 +14,4 @@ mlruns/
 *.h5
 *.pkl
 venv/
+mlflow.db
